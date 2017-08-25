@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Add Invoice</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1>Project `Add Invoice`: Demo !</h1><br>
 
-  <form action="/quotes" method="POST">
+  <form action="/InvoiceList" method="POST">
 
   &nbsp; Name: &nbsp; <input type="text" name="fullname" required="true"><br><br><br>
   &nbsp; Email: &nbsp; <input type="text" name="emailId"><br><br><br> 
@@ -16,15 +15,15 @@
   
     &nbsp;&nbsp;<label for="item info"><b>Item description:</b> </label> &nbsp;&nbsp;
     
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="total amount"><b>Amount:</b> </label><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="Item amount"><b>Amount:</b> </label><br>
 
     <table>
         <tr>
-            <td> <input type ="text" name="item_info" class="form-first-name"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td> <input type ="text" name="item_info" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <td> <input id="total_amount" name="amount" type="number"/>
         </tr>
         <tr>
-            <td> <input type ="text" name="item_info" class="form-first-name"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td> <input type ="text" name="item_info" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <td> <input id="total_amount" name="amount" type="number"/>
         </tr>
         <tr>  
