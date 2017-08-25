@@ -10,25 +10,29 @@
 
   <form action="/quotes" method="POST">
 
-  &nbsp; Name: &nbsp; <input type="text" name="fullname"><br><br><br> &nbsp;
-  Email: &nbsp; <input type="text" name="emailId"><br><br><br> &nbsp;
-  Due Date: &nbsp; <input type="date" name="datePicker"><br><br><br><br>
+  &nbsp; Name: &nbsp; <input type="text" name="fullname" required="true"><br><br><br>
+  &nbsp; Email: &nbsp; <input type="text" name="emailId"><br><br><br> 
+  &nbsp; Due Date: &nbsp; <input type="date" name="datePicker"><br><br><br><br>
   
     &nbsp;&nbsp;<label for="item info"><b>Item description:</b> </label> &nbsp;&nbsp;
     
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="total amount"><b>Amount:</b> </label><br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="total amount"><b>Amount:</b> </label><br>
 
     <table>
         <tr>
             <td> <input type ="text" name="item_info" class="form-first-name"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <td> <input id="total_amount" name="amount" type="number"/>
         </tr>
+        <tr>
+            <td> <input type ="text" name="item_info" class="form-first-name"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td> <input id="total_amount" name="amount" type="number"/>
+        </tr>
         <tr>  
         <td>
-            <br><button id="addmore" onclick="duplicate()">Add More Items</button>
+            <br><button id="addmore" >Add More Items</button>
         </td>
     </tr>
-    </table><br><br>
+    </table><br><br><br>
 
 &nbsp;&nbsp;<label for="total amount"><b>TOTAL:</b> </label> &nbsp;&nbsp; <br><br>
 
