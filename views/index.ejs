@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Invoice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Project `Add Invoice`: Demo !</h1><br>
+
+  <form action="/quotes" method="POST">
+
+  &nbsp; Name: &nbsp; <input type="text" name="fullname"><br><br><br> &nbsp;
+  Email: &nbsp; <input type="text" name="emailId"><br><br><br> &nbsp;
+  Due Date: &nbsp; <input type="date" name="datePicker"><br><br><br><br>
+  
+    &nbsp;&nbsp;<label for="item info"><b>Item description:</b> </label> &nbsp;&nbsp;
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="total amount"><b>Amount:</b> </label><br><br>
+
+    <table>
+        <tr>
+            <td> <input type ="text" name="item_info" class="form-first-name"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td> <input id="total_amount" name="amount" type="number"/>
+        </tr>
+        <tr>  
+        <td>
+            <br><button id="addmore" onclick="duplicate()">Add More Items</button>
+        </td>
+    </tr>
+    </table><br><br>
+
+&nbsp;&nbsp;<label for="total amount"><b>TOTAL:</b> </label> &nbsp;&nbsp; <br><br>
+
+<button type="submit" style="font-size:10pt;color:white;
+background-color:green;border:2px solid #336600;padding:5px;">Send Invoice</button>
+  </form>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
