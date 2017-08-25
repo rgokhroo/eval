@@ -2,16 +2,15 @@
   "name": "eval",
   "version": "1.0.0",
   "description": "Invoice Project",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "test",
-    "dev": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rgokhroo/eval.git"
   },
-  "author": "Ranu Gokhroo",
+  "author": "Ranu Gokhroo <ranu_gokhroo@intuit.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rgokhroo/eval/issues"
