@@ -9,7 +9,7 @@ MongoClient.connect('mongodb://test_user:testpwd@ds157723.mlab.com:57723/test_ut
   if (err) return console.log(err)
   db = database
   app.listen(process.env.PORT || 3000, () => {
-    console.log('listening on port 3000....')
+    console.log('Listening on port 3000....')
   })
 })
 
@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 app.post('/InvoiceList', (req, res) => {
   db.collection('InvoiceList').save(req.body, (err, result) => {
     if (err) return console.log(err)
-    console.log('saved to database')
+    console.log('Your invoice is saved to the database successfully!!')
     res.redirect('/')
   })
 })
