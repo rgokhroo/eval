@@ -22,7 +22,7 @@
     <table id="tbl">
       <tr>
         <td> <input type="text" name="item_info"></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <td> <input class="amount" name="amount" type="number" onblur="updatesum()"></td>
+        <td> <input class="amount" name="amount" type="number" onblur="updateSum()"></td>
       </tr>
     </table><br>
     &nbsp;<input type="button" name="Submit" value="Add more items" onclick="createNewRows()"/><br><br><br><br>
@@ -37,16 +37,16 @@
   <script>
     function createNewRows() {
       var row = '';
-      row = "<td> <input type ='text' name='item_info'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td> <input class='amount' name='amount' type='number'  onblur='updatesum()'/>";
+      row = "<td> <input type ='text' name='item_info'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td> <input class='amount' name='amount' type='number'  onblur='updateSum()'/>";
       var table = document.getElementById("tbl");
       var total_rows = table.rows.length;
       let tr = document.createElement("tr");
       tr.innerHTML = row;
       table.appendChild(tr);
-      return false;e
+      return false;
     }
     
-    function updatesum() {
+    function updateSum() {
       var sum = 0;
       const elements = document.querySelectorAll(".amount");
       for(var i=0;i< elements.length;i++) {

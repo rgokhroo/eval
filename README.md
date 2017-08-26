@@ -20,3 +20,8 @@ As a prerequisite you'll need [Node.js](https://nodejs.org/en/download/) (which 
 1. run `npm start`
 2. Navigate to `localhost:3000`
 3. Add data to invoice & Submit !
+
+## Validation
+
+1. Login to [mLab](https://mlab.com/login/)
+2. Navigate to collection `InvoiceList` to validate the data stored!
